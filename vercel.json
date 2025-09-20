@@ -12,5 +12,8 @@
     "NEXT_PUBLIC_SHARDEUM_RPC_URL": "https://unstablenet.shardeum.org/",
     "NEXT_PUBLIC_SHARDEUM_CHAIN_ID": "8080",
     "NEXT_PUBLIC_SHARDEUM_EXPLORER_URL": "https://explorer-unstablenet.shardeum.org/"
-  }
+  },
+  "builds": [
+    { "src": "next.config.mjs", "use": "@vercel/next" }
+  ],
 }
