@@ -1,0 +1,16 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "functions": {
+    "app/api/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "env": {
+    "NEXT_PUBLIC_SHARDEUM_RPC_URL": "https://unstablenet.shardeum.org/",
+    "NEXT_PUBLIC_SHARDEUM_CHAIN_ID": "8080",
+    "NEXT_PUBLIC_SHARDEUM_EXPLORER_URL": "https://explorer-unstablenet.shardeum.org/"
+  }
+}

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  shardeum-dapp:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_SHARDEUM_RPC_URL=https://unstablenet.shardeum.org/
+      - NEXT_PUBLIC_SHARDEUM_CHAIN_ID=8080
+      - NEXT_PUBLIC_SHARDEUM_EXPLORER_URL=https://explorer-unstablenet.shardeum.org/
+    volumes:
+      - ./.env.local:/app/.env.local:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

@@ -1,0 +1,16 @@
+{
+  "shardeum-unstablenet": {
+    "PaymentContract": {
+      "address": "0x742d35Cc6634C0532925a3b8D0C9964C6634C6C87",
+      "deployedAt": "2025-01-20T10:30:00Z"
+    },
+    "NFTTicketing": {
+      "address": "0x1234567890123456789012345678901234567890",
+      "deployedAt": "2025-01-20T10:35:00Z"
+    },
+    "VotingContract": {
+      "address": "0x9876543210987654321098765432109876543210",
+      "deployedAt": "2025-01-20T10:40:00Z"
+    }
+  }
+}
